@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Electron Music Visualizer</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #000;
+        overflow: hidden;
+      }
+      canvas {
+        display: block;
+      }
+      #fileInput {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="file" id="fileInput" accept="audio/*" />
+    <canvas id="visualizer"></canvas>
+    <script src="renderer.js"></script>
+  </body>
+</html>
